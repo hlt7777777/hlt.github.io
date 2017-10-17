@@ -28,7 +28,8 @@ GROUP BY                    SELECT column_name1,SUM(column_name2) FROM table_nam
 HAVING                      SELECT column_name1,SUM(column_name2) FROM table_name GROUP BY column_name1 HAVING SUM(column_name2) condition value
 IN                          SELECT column_name(s) FROM table_name WHERE column_name IN (value1,value2,..)
 INSERT INTO                 INSERT INTO table_name VALUES (value1, value2,....)
-or                          INSERT INTO table_name (column_name1, column_name2,...) VALUES (value1, value2,....)
+                            or                         
+                            INSERT INTO table_name (column_name1, column_name2,...) VALUES (value1, value2,....)
 LIKE                        SELECT column_name(s) FROM table_name WHERE column_name LIKE pattern
 ORDER BY                    SELECT column_name(s) FROM table_name ORDER BY column_name [ASC|DESC]
 SELECT                      SELECT column_name(s) FROM table_name
