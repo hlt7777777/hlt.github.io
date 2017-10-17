@@ -1,5 +1,5 @@
 常见 SQL 的语句以及用法如下：
-```sql
+```SQL
 语句                         语法
 AND / OR                    SELECT column_name(s) FROM table_name WHERE condition AND|OR condition
 ALTER TABLE (add column)    ALTER TABLE table_name ADD column_name datatype
