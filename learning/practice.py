@@ -29,4 +29,10 @@ days = timedelta(days = 1)
 yesterday = today - days 
 print(today,yesterday)
 
+one_week = timedelta(weeks=1)
+last_week = today - one_week
+print(last_week)
 
+birthday = input('input your date(dd/mm/yyyy)')
+birthday_day = datetime.strptime(birthday, '%d/%m/%Y')
+print(str(birthday_day))
