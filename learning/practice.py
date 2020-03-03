@@ -63,5 +63,15 @@
 # elif a == 2:
 #     print(17)
 
+def f(name, force_uppercase = True):
+    if force_uppercase:
+        first_name = name[0:1].upper()
+    else:
+        first_name = name[0:1]
+    return first_name
 
+
+# init_name = input('your name is:')
+final = f('init_name')
+print(final)
 
