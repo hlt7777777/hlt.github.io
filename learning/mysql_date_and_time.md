@@ -1,0 +1,141 @@
+
+
+
+## mysql日期与时间函数
+
+- ADDDATE()
+- ADDTIME()
+- CONVERT_TZ()
+- CURDATE()
+- CURRENT_DATE(), CURRENT_DATE
+- CURRENT_TIME(), CURRENT_TIME
+- CURRENT_TIMESTAMP(), CURRENT_TIMESTAMP
+- CURTIME()
+- DATE()
+- DATE_ADD()
+- DATE_FORMAT()
+- DATE_SUB()
+- DATEDIFF()
+- DAY()
+- DAYNAME()
+- DAYOFMONTH()
+- DAYOFWEEK()
+- DAYOFYEAR()
+- EXTRACT()
+- FROM_DAYS()
+- FROM_UNIXTIME()
+- GET_FORMAT()
+- HOUR()
+- LAST_DAY
+- LOCALTIME(), LOCALTIME
+- LOCALTIMESTAMP, LOCALTIMESTAMP()
+- MAKEDATE()
+- MAKETIME()
+- MICROSECOND()
+- MINUTE()
+- MONTH()
+- MONTHNAME()
+- NOW()
+- PERIOD_ADD()
+- PERIOD_DIFF()
+- QUARTER()
+- SEC_TO_TIME()
+- SECOND()
+- STR_TO_DATE()
+- SUBDATE()
+- SUBTIME()
+- SYSDATE()
+- TIME()
+- TIME_FORMAT()
+- TIME_TO_SEC()
+- TIMEDIFF()
+- TIMESTAMP()
+- TIMESTAMPADD()
+- TIMESTAMPDIFF()
+- TO_DAYS()
+- TO_SECONDS()
+- UNIX_TIMESTAMP()
+- UTC_DATE()
+- UTC_TIME()
+- UTC_TIMESTAMP()
+- WEEK()
+- WEEKDAY()
+- WEEKOFYEAR()
+- YEAR()
+- YEARWEEK()
+
+
+ADDDATE(date,INTERVAL expr unit), ADDDATE(expr,days)
+```sql
+mysql> SELECT DATE_ADD('2008-01-02', INTERVAL 31 DAY);
+        -> '2008-02-02'
+mysql> SELECT ADDDATE('2008-01-02', INTERVAL 31 DAY);
+        -> '2008-02-02'
+```
+CONVERT_TZ(dt,from_tz,to_tz)
+```sql
+mysql> SELECT CONVERT_TZ('2004-01-01 12:00:00','GMT','MET');
+        -> '2004-01-01 13:00:00'
+mysql> SELECT CONVERT_TZ('2004-01-01 12:00:00','+00:00','+10:00');
+        -> '2004-01-01 22:00:00'
+```
+CURDATE()
+```sql
+mysql> SELECT CURDATE();
+        -> '2008-06-13'
+mysql> SELECT CURDATE() + 0;
+        -> 20080613
+```
+
+```sql
+mysql> SELECT CURTIME();
+        -> '23:50:26'
+mysql> SELECT CURTIME() + 0;
+        -> 235026.000000
+```
+
+```sql
+
+
+
+```
+
+
+```sql
+
+
+
+```
+
+
+```sql
+
+
+
+```
+
+```sql
+
+
+
+```
+
+```sql
+
+
+
+```
+
+```sql
+
+
+
+```
+
+```sql
+
+
+
+```
+
+
